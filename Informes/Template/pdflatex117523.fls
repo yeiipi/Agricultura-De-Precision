@@ -1,0 +1,4 @@
+PWD /media/Data/Universidad/Semestre2020_2/cornerstoneProject/Proyecto/Agricultura-De-Precision/Informes/Template
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf

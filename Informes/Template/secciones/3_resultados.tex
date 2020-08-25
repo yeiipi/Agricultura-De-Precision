@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resultados} % NOMBRE DE LA SECCIÓN
+\label{sec:resultados} % ETIQUETA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Los resultados deberán mostrar una secuencia lógica y deberán contener toda la información necesaria para su futura interpretación; si la naturaleza de los experimentos lo requiere, estos deben de presentarse en subsecciones. Con el objetivo de mostrar la información generada de una manera amigable y comprensible, se requiere utilizar tablas y figuras autoexplicativas. Es importante destacar que en esta sección no se describe por qué se obtuvieron estos resultados, ya que esto se realizará más adelante en la sección \ref{sec:discusion}.
+
+A continuación, se mostrarán ejemplos de cómo insertar tablas y figuras, incluidas sus correspondientes descripciones; además, se explicará como agregar ecuaciones químicas. Por ejemplo, en la figura \ref{fig:xrd} se muestra un difractograma de rayos X (XRD) de nanopartículas de óxido de cobre (II) (NPs \ce{CuO}) sintetizadas por el método de sol-gel.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\linewidth]{figuras/xrd.pdf}
+    \caption{Difractograma de rayos X de NPs \ce{CuO}; los planos cristalográficos característicos y que coinciden con la carta \textit{PDF Card No.: 01-089-5897 Quality: S} \citebf{Massarotti1998}.}
+    \label{fig:xrd}
+\end{figure}
+
+El código para insertar la imagen puede encontrarse en el código fuente; la imagen anterior es un archivo \texttt{.pdf} (paquete \texttt{pdfpages}), sin embargo, es posible utilizar archivos \texttt{.png} y \texttt{.jpg}/\texttt{.jpeg}; incluso, es posible agregar archivos \texttt{.tif} (generalmente obtenidos en imagenes de SEM) directamente al código ya que el preámbulo contiene un código que permite su conversión a \texttt{.png}.
+
+Definitivamente, el diseño de tablas es uno de los procesos más complejos en \LaTeX; con el objetivo de agilizar esto, se sugiere arreglar la información en una hoja de Microsoft Excel y utilizar la página \href{https://www.tablesgenerator.com/}{\textcolor{blue}{Tables Generator}} y seleccionar \textit{Escape special \TeX~symbols (\%, \&, \_, \#, \$)}, \textit{Smart output formatting} y en opciones extra \textit{Center table horizontally}. Además, en el archivo \texttt{0.0\_seccion.tex} en la carpeta \textit{secciones} de esta plantilla se encuentra el formato de tabla deseado. En caso de colocar una tabla que abarque ambas columnas de la página, se debe utilizar el ambiente \texttt{table*}.
+
+Aunque existen otros paquetes con el mismo objetivo, el autor de esta plantilla sugiere el uso del paquete \texttt{mhchem}, cuya \href{https://mirrors.rit.edu/CTAN/macros/latex/contrib/mhchem/mhchem.pdf}{\textcolor{blue}{documentación}} puede encontrarse en la red, para el uso de redacción de compuestos y ecuaciones químicas. Este paquete requiere el uso del comando \verb|\ce{}|, el cual puede usarse directamente en párrafos, por ejemplo, para escribir \ce{H2O}, \ce{CH3CH2OH}, \ce{CrO4^2-}, o bien arreglar reacciones químicas tal como en la ecuación \eqref{eq:rxn-1}.
+
+\begin{equation}
+    \label{eq:rxn-1}
+    \ce{C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(g)}
+\end{equation}
+
+\noindent Es de suma importancia leer la documentación para evitar caer en errores de uso de flechas, subíndices y coeficientes; el código utilizado para la redacción de la ecuación anterior es el siguiente:
+
+\begin{verbatim}
+    \begin{equation}
+        \label{eq:rxn-1}
+        \ce{C3H8(g) + 5O2(g) -> 3 CO2(g) 
+            + 4H2O(g)}
+    \end{equation}
+\end{verbatim}
