@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+agua	js/script1.js	/^function agua() {$/;"	f
+bottom	js/script1.js	/^let margin = {top: 300, right: 20, bottom: 30, left: 50};$/;"	p	class:let
+humedad	js/script1.js	/^function humedad() {$/;"	f
+left	js/script1.js	/^let margin = {top: 300, right: 20, bottom: 30, left: 50};$/;"	p	class:let
+luz	js/script1.js	/^function luz() {$/;"	f
+luzonoff	js/script1.js	/^function luzonoff() {$/;"	f
+ph	js/script1.js	/^function ph() {$/;"	f
+right	js/script1.js	/^let margin = {top: 300, right: 20, bottom: 30, left: 50};$/;"	p	class:let
+temperatura	js/script1.js	/^function temperatura() {$/;"	f
+top	js/script1.js	/^let margin = {top: 300, right: 20, bottom: 30, left: 50};$/;"	p	class:let

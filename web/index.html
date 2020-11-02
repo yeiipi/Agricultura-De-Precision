@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/master.css" type="text/css">
+        <title>Green Tower</title>
+    </head>
+    <body>
+        <h1>GREEN TOWER</h1>
+        <script src="./js/script1.js" charset="utf-8"></script>
+        <div class="cont" id="monitoreo">
+            <span><h2> MONITOREO </h2></span>
+            <!-- <span><input class="bt cont" type="button" name="resumen" value="RESUMEN" id="resumen" onclick="resumen()" onclick="resumen()"></<span></span>> -->
+            <span><input class="bt cont" type="button" name="temperatura" value="TEMPERATURA" id="temperatura" onclick="temperatura()"></span>
+            <span><input class="bt cont" type="button" name="humedad" value="HUMEDAD" id="humedad" onclick="humedad()"></span>
+            <span><input class="bt cont" type="button" name="luz" value="LUZ" id="luz" onclick="luz()"></span>
+            <span><input class="bt cont" type="button" name="ph" value="PH" id="ph" onclick="ph()"></span>
+        </div>
+        <div id="controles">
+            <span><h2> CONTROLES </h2></span>
+            <span><input class="bt cont" type="button" name="agua" value="AGUA" id="agua" onclick="agua()"></span>
+            <span><input class="bt cont" type="button" name="luzonoff" value="LUZ ON/OFF" id="luzonoff" onclick="luzonoff()"></span>
+        </div>
+    </body>
+</html>
