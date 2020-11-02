@@ -1,0 +1,14 @@
+#subject line (50 chars max)
+<++>
+#Issue code:
+#AD -> add new files
+#DB -> debug
+#UD -> update
+#RM -> remove a file
+
+
+issue no: <++>
+
+#commit body (72 chars max)
+<++>
+

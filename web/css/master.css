@@ -45,12 +45,6 @@ svg {
     height:460px;
 }
 
-path {
-    stroke: steelblue;
-    stroke-width: 2;
-    fill: none;
-}
-
 /*--- by class ---*/
 
 .bt {
@@ -75,11 +69,13 @@ path {
 }
 
 .y_axis {
-    color: #698969;
+    stroke:#695E5E;
+    color: #695E5E;
 }
 
 .x_axis {
-    color:#698969;
+    color: #695E5E;
+    stroke:#695E5E;
 }
 
 /*--- by id ---*/
