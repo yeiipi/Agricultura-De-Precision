@@ -1,0 +1,16 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'principal.blg'
+[135] biber:322> INFO - === mié sep  9, 2020, 20:20:25
+[158] Biber.pm:415> INFO - Reading 'principal.bcf'
+[275] Biber.pm:943> INFO - Found 9 citekeys in bib section 0
+[300] Biber.pm:4256> INFO - Processing section 0
+[301] Utils.pm:75> INFO - Globbing data source '/media/Data/Universidad/Semestre2020_2/cornerstoneProject/Proyecto/Agricultura-De-Precision/Informes/references.bib'
+[301] Utils.pm:91> INFO - Globbed data source '/media/Data/Universidad/Semestre2020_2/cornerstoneProject/Proyecto/Agricultura-De-Precision/Informes/references.bib' to /media/Data/Universidad/Semestre2020_2/cornerstoneProject/Proyecto/Agricultura-De-Precision/Informes/references.bib
+[317] Biber.pm:4455> INFO - Looking for bibtex format file '/media/Data/Universidad/Semestre2020_2/cornerstoneProject/Proyecto/Agricultura-De-Precision/Informes/references.bib' for section 0
+[318] bibtex.pm:1653> INFO - LaTeX decoding ...
+[332] bibtex.pm:1471> INFO - Found BibTeX data source '/media/Data/Universidad/Semestre2020_2/cornerstoneProject/Proyecto/Agricultura-De-Precision/Informes/references.bib'
+[480] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[481] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[481] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'es-ES'
+[506] bbl.pm:652> INFO - Writing 'principal.bbl' with encoding 'UTF-8'
+[517] bbl.pm:755> INFO - Output to principal.bbl

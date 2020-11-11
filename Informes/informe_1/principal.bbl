@@ -1,0 +1,328 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{belen2019}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=50c104ba58fb295fcf1b61a229b85f44}{%
+           family={Acosta},
+           familyi={A\bibinitperiod},
+           given={Ma\bibnamedelima Belén},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{50c104ba58fb295fcf1b61a229b85f44}
+      \strng{fullhash}{50c104ba58fb295fcf1b61a229b85f44}
+      \strng{bibnamehash}{50c104ba58fb295fcf1b61a229b85f44}
+      \strng{authorbibnamehash}{50c104ba58fb295fcf1b61a229b85f44}
+      \strng{authornamehash}{50c104ba58fb295fcf1b61a229b85f44}
+      \strng{authorfullhash}{50c104ba58fb295fcf1b61a229b85f44}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{8}
+      \field{title}{Plantas hídroponicas: tipos, lista de ejempos y cómo cultivarlas}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ecologiaverde.com/plantas-hidroponicas-tipos-lista-de-ejemplos-y-como-cultivarlas-2159.html
+      \endverb
+      \verb{url}
+      \verb https://www.ecologiaverde.com/plantas-hidroponicas-tipos-lista-de-ejemplos-y-como-cultivarlas-2159.html
+      \endverb
+    \endentry
+    \entry{cabazas2020}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aeabed85e36ac5885055b68d04f616d8}{%
+           family={Cabezas},
+           familyi={C\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aeabed85e36ac5885055b68d04f616d8}
+      \strng{fullhash}{aeabed85e36ac5885055b68d04f616d8}
+      \strng{bibnamehash}{aeabed85e36ac5885055b68d04f616d8}
+      \strng{authorbibnamehash}{aeabed85e36ac5885055b68d04f616d8}
+      \strng{authornamehash}{aeabed85e36ac5885055b68d04f616d8}
+      \strng{authorfullhash}{aeabed85e36ac5885055b68d04f616d8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{month}{3}
+      \field{title}{Frecuencias de riego en sistema NFT y MIXTO en hidroponia}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=UE97xcRkcME&feature=youtu.be
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=UE97xcRkcME&feature=youtu.be
+      \endverb
+    \endentry
+    \entry{culthidrop2020}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c7ffcf321379eabec3bd7721784ebbfa}{%
+           family={CultivoHidropónico.info},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7ffcf321379eabec3bd7721784ebbfa}
+      \strng{fullhash}{c7ffcf321379eabec3bd7721784ebbfa}
+      \strng{bibnamehash}{c7ffcf321379eabec3bd7721784ebbfa}
+      \strng{authorbibnamehash}{c7ffcf321379eabec3bd7721784ebbfa}
+      \strng{authornamehash}{c7ffcf321379eabec3bd7721784ebbfa}
+      \strng{authorfullhash}{c7ffcf321379eabec3bd7721784ebbfa}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{month}{4}
+      \field{title}{Perfeccionando el pH de su Solución de Nutrientes Hidropónicos}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://cultivohidroponico.info/perfeccionando-el-ph-de-su-solucion-de-nutrientes-hidroponicos/
+      \endverb
+      \verb{url}
+      \verb https://cultivohidroponico.info/perfeccionando-el-ph-de-su-solucion-de-nutrientes-hidroponicos/
+      \endverb
+    \endentry
+    \entry{katama2019}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4a1bb0195de435ccd61a1357dc5dcc19}{%
+           family={Katama},
+           familyi={K\bibinitperiod},
+           given={Fatima},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a1bb0195de435ccd61a1357dc5dcc19}
+      \strng{fullhash}{4a1bb0195de435ccd61a1357dc5dcc19}
+      \strng{bibnamehash}{4a1bb0195de435ccd61a1357dc5dcc19}
+      \strng{authorbibnamehash}{4a1bb0195de435ccd61a1357dc5dcc19}
+      \strng{authornamehash}{4a1bb0195de435ccd61a1357dc5dcc19}
+      \strng{authorfullhash}{4a1bb0195de435ccd61a1357dc5dcc19}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{month}{9}
+      \field{title}{Cómo Japón está revolucionando la agricultura sin tierra ni trabajadores}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bbc.com/mundo/noticias-49784511
+      \endverb
+      \verb{url}
+      \verb https://www.bbc.com/mundo/noticias-49784511
+      \endverb
+    \endentry
+    \entry{usatoday2019}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8a7be7509ba473f0c7c1f9fa8d631408}{%
+           family={Live},
+           familyi={L\bibinitperiod},
+           given={USA\bibnamedelima Today},
+           giveni={U\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8a7be7509ba473f0c7c1f9fa8d631408}
+      \strng{fullhash}{8a7be7509ba473f0c7c1f9fa8d631408}
+      \strng{bibnamehash}{8a7be7509ba473f0c7c1f9fa8d631408}
+      \strng{authorbibnamehash}{8a7be7509ba473f0c7c1f9fa8d631408}
+      \strng{authornamehash}{8a7be7509ba473f0c7c1f9fa8d631408}
+      \strng{authorfullhash}{8a7be7509ba473f0c7c1f9fa8d631408}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{9}
+      \field{title}{Next Gen Farming Without Soil and 90\% Less Water}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=3Ww2TP_tU7o&feature=youtu.be
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=3Ww2TP_tU7o&feature=youtu.be
+      \endverb
+    \endentry
+    \entry{nievesperez2017}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=736c1db471963b0fb3b56e75ddfc96c4}{%
+           family={NievesPerez},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{736c1db471963b0fb3b56e75ddfc96c4}
+      \strng{fullhash}{736c1db471963b0fb3b56e75ddfc96c4}
+      \strng{bibnamehash}{736c1db471963b0fb3b56e75ddfc96c4}
+      \strng{authorbibnamehash}{736c1db471963b0fb3b56e75ddfc96c4}
+      \strng{authornamehash}{736c1db471963b0fb3b56e75ddfc96c4}
+      \strng{authorfullhash}{736c1db471963b0fb3b56e75ddfc96c4}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ventajas y desventajas del cultivo hidropónico frente al cultivo tradicional}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://comunidad.leroymerlin.es/t5/Blog-de-la-Comunidad/Ventajas-y-desventajas-del-cultivo-hidrop%C3%B3nico-frente-al-cultivo/ba-p/194391
+      \endverb
+      \verb{url}
+      \verb https://comunidad.leroymerlin.es/t5/Blog-de-la-Comunidad/Ventajas-y-desventajas-del-cultivo-hidrop%C3%B3nico-frente-al-cultivo/ba-p/194391
+      \endverb
+    \endentry
+    \entry{ricopia2018}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=281e0ec453d347c5b49ea329de9f64d6}{%
+           family={Ricopia},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{281e0ec453d347c5b49ea329de9f64d6}
+      \strng{fullhash}{281e0ec453d347c5b49ea329de9f64d6}
+      \strng{bibnamehash}{281e0ec453d347c5b49ea329de9f64d6}
+      \strng{authorbibnamehash}{281e0ec453d347c5b49ea329de9f64d6}
+      \strng{authornamehash}{281e0ec453d347c5b49ea329de9f64d6}
+      \strng{authorfullhash}{281e0ec453d347c5b49ea329de9f64d6}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{3}
+      \field{title}{La importancia de automatizar procesos en una empresa}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ricopia.com/la-importancia-automatizar-procesos-una-empresa/
+      \endverb
+      \verb{url}
+      \verb https://www.ricopia.com/la-importancia-automatizar-procesos-una-empresa/
+      \endverb
+    \endentry
+    \entry{doi:10.1002/fes3.83}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d07562228011b20b2956f2bc0cfe324c}{%
+           family={Touliatos},
+           familyi={T\bibinitperiod},
+           given={Dionysios},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61ce6ce6fdee41feee778e4a607a07c9}{%
+           family={Dodd},
+           familyi={D\bibinitperiod},
+           given={Ian\bibnamedelima C.},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f0cee65fbdf8b82a865517e70a50eff}{%
+           family={McAinsh},
+           familyi={M\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{268c97045c9a48dcd4fe5f7f44404e96}
+      \strng{fullhash}{268c97045c9a48dcd4fe5f7f44404e96}
+      \strng{bibnamehash}{268c97045c9a48dcd4fe5f7f44404e96}
+      \strng{authorbibnamehash}{268c97045c9a48dcd4fe5f7f44404e96}
+      \strng{authornamehash}{268c97045c9a48dcd4fe5f7f44404e96}
+      \strng{authorfullhash}{268c97045c9a48dcd4fe5f7f44404e96}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Food and Energy Security}
+      \field{number}{3}
+      \field{title}{Vertical farming increases lettuce yield per unit area compared to conventional horizontal hydroponics}
+      \field{volume}{5}
+      \field{year}{2016}
+      \field{pages}{184\bibrangedash 191}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1002/fes3.83
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/fes3.83
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/fes3.83
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/fes3.83
+      \endverb
+      \keyw{Land use efficiency,plant factory,urban agriculture,vertical column grower.}
+    \endentry
+    \entry{twenergy2019}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cdd6def28ad554a68234ca379bf0dc0a}{%
+           family={Twenergy},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{cdd6def28ad554a68234ca379bf0dc0a}
+      \strng{fullhash}{cdd6def28ad554a68234ca379bf0dc0a}
+      \strng{bibnamehash}{cdd6def28ad554a68234ca379bf0dc0a}
+      \strng{authorbibnamehash}{cdd6def28ad554a68234ca379bf0dc0a}
+      \strng{authornamehash}{cdd6def28ad554a68234ca379bf0dc0a}
+      \strng{authorfullhash}{cdd6def28ad554a68234ca379bf0dc0a}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{month}{11}
+      \field{title}{¿Qué es un huerto hidropónico?}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://twenergy.com/ecologia-y-reciclaje/curiosidades/que-es-huerto-hidroponico/
+      \endverb
+      \verb{url}
+      \verb https://twenergy.com/ecologia-y-reciclaje/curiosidades/que-es-huerto-hidroponico/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
