@@ -1,5 +1,5 @@
 .template.txt
 *.env
-*.idea
+*.idea/
 *requirements.txt
 *Procfile
