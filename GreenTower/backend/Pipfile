@@ -12,6 +12,9 @@ psycopg2 = "*"
 django-rest-multiple-models = "*"
 python-dotenv = "*"
 django-cors-headers = "*"
+gunicorn = "*"
+whitenoise = "*"
+boto = "*"
 
 [requires]
 python_version = "3.8"

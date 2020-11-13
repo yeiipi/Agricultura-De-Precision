@@ -1,0 +1,132 @@
+/*--- by type ---*/
+body {
+    position:absolute;
+    background-color:#E7E7E7;
+    margin-left:50px;
+    margin-top:20px;
+}
+
+h1 {
+    cursor:none;
+    position:absolute;
+    left:75px;
+    font-family:'Roboto Mono',monospace;
+    font-weight:700;
+    color: #24974f;
+}
+
+h2 {
+    position:absolute;
+    left:60px;
+    font-family:'Roboto Mono',monospace;
+    font-weight:600;
+    color: #695e5e;
+}
+
+div#monitoreo {
+    display:flex;
+    align-content:center;
+    position:absolute;
+    top:100px;
+}
+
+div#controles {
+    display:flex;
+    align-content:center;
+    position:absolute;
+    top:390px;
+}
+
+svg {
+    position:absolute;
+    top:160px;
+    left:300px;
+    width:950px;
+    height:460px;
+}
+
+/*--- by class ---*/
+
+div.tooltip {
+
+    /*color:#9D6959;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size:15px;
+    text-align:center;
+
+    position:absolute;
+    padding:9px;
+    height:90px;
+    pointer-events:none;
+
+    border: solid 1px #a0a0a0;
+    background: #bbff00;
+    background: rgba(43, 35, 35, 0.4);
+}
+
+
+
+.bt {
+    position:absolute;
+    background:#BAD6BA;
+    border-radius: 104px;
+    border-color:transparent;
+    color:#698969;
+    box-sizing:inherit;
+    width:227px;
+    height:39px;
+    font-family:'Roboto Mono',monospace;
+    font-weight:500;
+    font-size:15px;
+}
+
+.bt:hover {
+    background: #698969;
+    color:#BAD6BA;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.y_axis {
+    stroke: #695e5e;
+    color: #695E5E;
+}
+
+.x_axis {
+    color: #695E5E;
+    stroke:#695E5E;
+}
+
+text.descrip {
+    color: #695E5E;
+    text-anchor: end;
+    font-family:'Roboto Mono',monospace;
+}
+
+
+/*--- by id ---*/
+
+#temperatura {
+    top:60px;
+}
+
+#humedad {
+    top:120px;
+}
+
+#luz {
+    top:180px;
+}
+
+#ph {
+    top:240px;
+}
+
+#agua {
+    top:60px;
+}
+
+#luzonoff {
+    top:120px;
+}

@@ -12,6 +12,8 @@ let info_del_buscador = navigator.userAgent;
 let margin = {top: 300, right: 20, bottom: 30, left: 50};
 let width = 900;
 let height = 410;
+let Min;
+let Max;
 
 /*--- New scales and parsers ---*/
 
@@ -57,12 +59,9 @@ let fonendoscopio = cuerpito.append("div")
 /*--- Comportamiento del fonendoscopio ---*/
 
 function dotOn(d) {
-    fetch ('http://127.0.0.1:8001/api/planta/1/').then( responce => {
+    fetch ('http://127.0.0.1:8000/api/planta/1/').then( responce => {
         return responce.json();
     }).then(data => {
-
-        let min;
-        let max;
 
         if (info_del_buscador.includes("Firefox")) {
             // console.log("U in Firefox");
@@ -79,28 +78,28 @@ function dotOn(d) {
         if (dat.tipo_magnitud == '1') {
             tm = 'Temperatura';
             console.log(tm)
-            min = data.temp_min
-            max = data.temp_max
+            Min = data.temp_min
+            Max = data.temp_max
         } else if (dat.tipo_magnitud == '2') {
             tm = 'Humedad';
             console.log(tm)
-            min = data.humedad_min
-            max = data.humedad_max
+            Min = data.humedad_min
+            Max = data.humedad_max
         } else if (dat.tipo_magnitud == '3') {
             tm = 'Ph';
             console.log(tm)
-            min = data.ph_min
-            max = data.ph_max
+            Min = data.ph_min
+            Max = data.ph_max
         } else if (dat.tipo_magnitud == '4') {
             tm = 'Luz';
             console.log(tm)
-            min = data.luz_min
-            max = data.luz_max
+            Min = data.luz_min
+            Max = data.luz_max
         }
-        console.log(`min val ${min}`)
-        console.log(`max val ${max}`)
+        console.log(`min val ${Min}`)
+        console.log(`max val ${Max}`)
 
-        fonendoscopioCOLOR.domain([min,max])
+        fonendoscopioCOLOR.domain([Min,Max])
         fonendoscopio.transition()
             .duration(200)
             .style("fill",)
@@ -143,6 +142,8 @@ function dotWork(d){
     }
 
     n = fonendoscopioCOLOR(dat.magnitud);
+    console.log(fonendoscopioCOLOR.domain)
+
     let fF = new Date(Date.parse(dat.datetime));
     textA += tm + " ";
     textB += dat.magnitud + " ";
@@ -160,7 +161,16 @@ function dotWork(d){
     fonendoscopio
         .html(textA+"<br/>"+textB+"<br/>"+textC+"<br/>"+textD)
         .style("width",(MM*12)+"px")
-        .style("color",""+d3.interpolateViridis(n))
+        .style("color", d => {
+           if (dat.magnitud >= Max) {
+               return '#ff2637'
+           } else if (dat.magnitud <= Min) {
+               return '#b3fcff'
+           } else {
+               return '#77ff5f'
+           }
+        })
+            // ""+d3.interpolateViridis(n))
         .style("left", (event.pageX) + "px")
         .style("top", (event.pageY) + "px");
 
@@ -175,7 +185,7 @@ function dotOff () {
 
 
 /*--- Corrida inicial ---*/
-fetch ('http://127.0.0.1:8001/api/medida/temperatura/').then( response => {
+fetch ('http://127.0.0.1:8000/api/medida/temperatura/').then( response => {
         return response.json();
     }).then(data => {
 
@@ -198,8 +208,8 @@ fetch ('http://127.0.0.1:8001/api/medida/temperatura/').then( response => {
         descY = torso.append("text")
             .attr("class","descrip")
             .attr("text-anchor","end")
-            .attr("x",50)
-            .attr("y",-290)
+            .attr("x",70)
+            .attr("y",-280)
             .text("Temperatura");
 
         /*--- Ejes como tal ---*/
@@ -260,11 +270,11 @@ fetch ('http://127.0.0.1:8001/api/medida/temperatura/').then( response => {
 
 /*--- Update functions ---*/
 function temperatura() {
-    fetch ('http://127.0.0.1:8001/api/medida/temperatura/').then( responce => {
+    fetch ('http://127.0.0.1:8000/api/medida/temperatura/').then( responce => {
         return responce.json();
     }).then(data => {
         // Update de texto para el tipo de magnitud | 06.11.2020 | yeiipi
-        descY.transition().duration(200).ease(d3.easeLinear).text("Temperatura").attr("x",50);
+        descY.transition().duration(200).ease(d3.easeLinear).text("Temperatura").attr("x",70);
 
         X.domain(d3.extent(data,function (d) {return new Date(Date.parse(d.datetime))}));
         Y.domain([0,d3.max(data, function (d) { return +d.magnitud; })]);
@@ -334,7 +344,7 @@ function temperatura() {
 }
 
 function humedad() {
-    fetch ('http://127.0.0.1:8001/api/medida/humedad/').then( responce => {
+    fetch ('http://127.0.0.1:8000/api/medida/humedad/').then( responce => {
         return responce.json();
     }).then(data => {
         // Update de texto para el tipo de magnitud | 06.11.2020 | yeiipi
@@ -409,7 +419,7 @@ function humedad() {
 }
 
 function ph() {
-    fetch ('http://127.0.0.1:8001/api/medida/ph/').then( responce => {
+    fetch ('http://127.0.0.1:8000/api/medida/ph/').then( responce => {
         return responce.json();
     }).then(data => {
         // Update de texto para el tipo de magnitud | 06.11.2020 | yeiipi
@@ -483,7 +493,7 @@ function ph() {
 }
 
 function luz() {
-    fetch ('http://127.0.0.1:8001/api/medida/luz/').then( responce => {
+    fetch ('http://127.0.0.1:8000/api/medida/luz/').then( responce => {
         return responce.json();
     }).then(data => {
         // Update de texto para el tipo de magnitud | 06.11.2020 | yeiipi

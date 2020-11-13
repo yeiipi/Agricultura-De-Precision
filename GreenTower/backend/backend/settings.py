@@ -10,29 +10,35 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-from dotenv import load_dotenv
-from pathlib import Path
 import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+# from boto.s3.connection import S3Connection as S3
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Set .env location
-env_path = Path("./../.env")
+env_path = Path("./.env")
 load_dotenv(dotenv_path=env_path)
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
+# SECRET_KEY = S3(os.environ["SECRET_KEY"])
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG")
+# DEBUG = S3(os.environ['DEBUG'])
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'https://gr33nt0w3r.herokuapp.com/',
+    '127.0.0.1',
+    'localhost',
+]
 
 # Application definition
 
@@ -51,7 +57,9 @@ INSTALLED_APPS = [
 
     # Local
     'greentower.apps.GreentowerConfig',
+    'frontend.apps.FrontendConfig',
 ]
+
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
 }
@@ -60,7 +68,7 @@ MIDDLEWARE = [
     # 3rd party
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -80,9 +88,8 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_URLS_REGEX = r'.*'
 
-
-
 ROOT_URLCONF = os.getenv("ROOT_URLCONF")
+# ROOT_URLCONF = S3(os.environ["ROOT_URLCONF"])
 
 TEMPLATES = [
     {
@@ -103,21 +110,28 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
+        # local
         'ENGINE': os.getenv('DB_ENGINE'),
         'NAME': os.getenv('DB_NAME'),
         'USER': os.getenv('DB_USER'),
         'PASSWORD': os.getenv('DB_PASSWORD'),
         'HOST': os.getenv('DB_HOST'),
-        'PORT': (os.getenv('DB_PORT')),
+        'PORT': os.getenv('DB_PORT'),
+
+        # heroku
+        # 'ENGINE': S3(os.environ['DB_ENGINE']),
+        # 'NAME': S3(os.environ['DB_NAME']),
+        # 'USER': S3(os.environ['DB_USER']),
+        # 'PASSWORD': S3(os.environ['DB_PASSWORD']),
+        # 'HOST': S3(os.environ['DB_HOST']),
+        # 'PORT': S3(os.environ['DB_PORT']),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -137,12 +151,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
+# LANGUAGE_CODE = S3(os.environ['LANGUAGE_CODE'])
 LANGUAGE_CODE = os.getenv('LANGUAGE_CODE')
 
+# TIME_ZONE = S3(os.environ['TIME_ZONE'])
 TIME_ZONE = os.getenv('TIME_ZONE')
 
 USE_I18N = True
@@ -151,8 +166,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
